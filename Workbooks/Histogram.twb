@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Yaş (Histogram+Veri+Seti)' inline='true' name='federated.1dyb8cm1omqnsk1dg8mm30sphmgf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Histogram+Veri+Seti' name='excel-direct.0ggtyt70ho7fx41guiqzi045pq3l'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Histogram+Veri+Seti.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0ggtyt70ho7fx41guiqzi045pq3l' name='Yaş' table='[Yaş$]' type='table'>
+          <columns gridOrigin='A1:A25:no:A1:A25:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Yaş' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0ggtyt70ho7fx41guiqzi045pq3l' name='Yaş' table='[Yaş$]' type='table'>
+          <columns gridOrigin='A1:A25:no:A1:A25:0' header='yes' outcome='2'>
+            <column datatype='integer' name='Yaş' ordinal='0' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Yaş</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Yaş]</local-name>
+            <parent-name>[Yaş]</parent-name>
+            <remote-alias>Yaş</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Yaş]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:A25:no:A1:A25:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Yaş (Yaş) (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Yaş]' peg='0' size='5' />
+      </column>
+      <column caption='Yaş (Yaş)' datatype='integer' name='[Yaş]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Yaş' datatype='table' name='[__tableau_internal_object_id__].[Yaş_B10E76F147B84FAABDC63EE1D24E9B16]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Yaş' id='Yaş_B10E76F147B84FAABDC63EE1D24E9B16'>
+            <properties context=''>
+              <relation connection='excel-direct.0ggtyt70ho7fx41guiqzi045pq3l' name='Yaş' table='[Yaş$]' type='table'>
+                <columns gridOrigin='A1:A25:no:A1:A25:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='Yaş' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Histogram</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Yaş (Histogram+Veri+Seti)' name='federated.1dyb8cm1omqnsk1dg8mm30sphmgf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dyb8cm1omqnsk1dg8mm30sphmgf'>
+            <column aggregation='None' datatype='integer' name='[Yaş (Yaş) (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Yaş]' peg='0' size='5' />
+            </column>
+            <column caption='Yaş (Yaş)' datatype='integer' name='[Yaş]' role='measure' type='quantitative' />
+            <column-instance column='[Yaş]' derivation='Count' name='[cnt:Yaş:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Yaş (Yaş) (bin)]' derivation='None' name='[none:Yaş (Yaş) (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1dyb8cm1omqnsk1dg8mm30sphmgf].[none:Yaş (Yaş) (bin):qk]' field-type='quantitative' major-origin='0' major-spacing='5' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1dyb8cm1omqnsk1dg8mm30sphmgf].[cnt:Yaş:qk]</rows>
+        <cols>[federated.1dyb8cm1omqnsk1dg8mm30sphmgf].[none:Yaş (Yaş) (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1dyb8cm1omqnsk1dg8mm30sphmgf].[Yaş (Yaş) (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1BA538C5-C13C-4084-9EAC-7D7ED6050396}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5BD5C6D4-B295-41C7-BEB5-81FA80F394D6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
