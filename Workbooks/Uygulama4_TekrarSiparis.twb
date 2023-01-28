@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Siparişler (Global+Superstore+Orders+2016)' inline='true' name='federated.0a8rdfy1na7bjp13lsnlm1hk467b' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Global+Superstore+Orders+2016' name='excel-direct.17b2uid0ztyloj1anut9x186nnve'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Global+Superstore+Orders+2016.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.17b2uid0ztyloj1anut9x186nnve' name='Siparişler' table='[Siparişler$]' type='table'>
+          <columns gridOrigin='A1:O1170:no:A1:O1170:0' header='yes' outcome='2'>
+            <column datatype='string' name='Sipariş ID' ordinal='0' />
+            <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+            <column datatype='date' name='Sevk Tarihi' ordinal='2' />
+            <column datatype='string' name='Müşteri ID' ordinal='3' />
+            <column datatype='string' name='Müşteri İsmi' ordinal='4' />
+            <column datatype='string' name='Segment' ordinal='5' />
+            <column datatype='string' name='Bölge' ordinal='6' />
+            <column datatype='string' name='İl' ordinal='7' />
+            <column datatype='string' name='İlçe' ordinal='8' />
+            <column datatype='string' name='Ürün ID' ordinal='9' />
+            <column datatype='string' name='Kategori' ordinal='10' />
+            <column datatype='string' name='Alt Kategori' ordinal='11' />
+            <column datatype='string' name='Ürün Adı' ordinal='12' />
+            <column datatype='real' name='Satış' ordinal='13' />
+            <column datatype='real' name='Kâr' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.17b2uid0ztyloj1anut9x186nnve' name='Siparişler' table='[Siparişler$]' type='table'>
+          <columns gridOrigin='A1:O1170:no:A1:O1170:0' header='yes' outcome='2'>
+            <column datatype='string' name='Sipariş ID' ordinal='0' />
+            <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+            <column datatype='date' name='Sevk Tarihi' ordinal='2' />
+            <column datatype='string' name='Müşteri ID' ordinal='3' />
+            <column datatype='string' name='Müşteri İsmi' ordinal='4' />
+            <column datatype='string' name='Segment' ordinal='5' />
+            <column datatype='string' name='Bölge' ordinal='6' />
+            <column datatype='string' name='İl' ordinal='7' />
+            <column datatype='string' name='İlçe' ordinal='8' />
+            <column datatype='string' name='Ürün ID' ordinal='9' />
+            <column datatype='string' name='Kategori' ordinal='10' />
+            <column datatype='string' name='Alt Kategori' ordinal='11' />
+            <column datatype='string' name='Ürün Adı' ordinal='12' />
+            <column datatype='real' name='Satış' ordinal='13' />
+            <column datatype='real' name='Kâr' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:O1170:no:A1:O1170:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sipariş ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sipariş ID]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Sipariş ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sipariş Tarihi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Sipariş Tarihi]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Sipariş Tarihi</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sevk Tarihi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Sevk Tarihi]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Sevk Tarihi</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Müşteri ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Müşteri ID]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Müşteri ID</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Müşteri İsmi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Müşteri İsmi]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Müşteri İsmi</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bölge</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bölge]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Bölge</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>İl</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[İl]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>İl</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>İlçe</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[İlçe]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>İlçe</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ürün ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ürün ID]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Ürün ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kategori</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Kategori]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Kategori</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alt Kategori</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Alt Kategori]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Alt Kategori</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ürün Adı</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ürün Adı]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Ürün Adı</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Satış</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Satış]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Satış</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kâr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Kâr]</local-name>
+            <parent-name>[Siparişler]</parent-name>
+            <remote-alias>Kâr</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Siparişler_B2A89C69CCD64D13BC237DC225771F62]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Müşteri İsmi]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Siparişler' datatype='table' name='[__tableau_internal_object_id__].[Siparişler_B2A89C69CCD64D13BC237DC225771F62]' role='measure' type='quantitative' />
+      <group caption='2013' name='[Müşteri İsmi Set 2]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Aimee Bixby&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Alan Barnes&quot;' />
+          <groupfilter from='&quot;Alan Haines&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Alejandro Ballentine&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Alyssa Tate&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Amy Hunt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Andrew Roberts&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Angele Hood&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Anthony Garverick&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Arianne Irving&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Arthur Prichep&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Becky Castell&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Ben Peterman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Benjamin Patterson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Bill Overfelt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Brian Derr&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Bruce Stewart&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Bryan Davis&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cari Sayre&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Carl Jackson&quot;' />
+          <groupfilter from='&quot;Catherine Glotzbach&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Cathy Prescott&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Chris McAfee&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Christine Sundaresam&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Christopher Conant&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Corey Roper&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Corinna Mitchell&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Craig Reiter&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cyma Kinney&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Daniel Lacy&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Darrin Van Huff&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Dave Brooks&quot;' />
+          <groupfilter from='&quot;Dave Poirier&quot;' function='range' level='[Müşteri İsmi]' to='&quot;David Kendrick&quot;' />
+          <groupfilter from='&quot;Don Weiss&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Duane Benoit&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Emily Ducich&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Eudokia Martin&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Eugene Barchas&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Filia McAdams&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Frank Hawley&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Gary Hwang&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Giulietta Baptist&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Greg Matthias&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Harold Ryan&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Henia Zydlo&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Henry Goldwyn&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Irene Maddox&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Ivan Liston&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jay Fein&quot;' />
+          <groupfilter from='&quot;Jill Fjeld&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Jim Epp&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Joel Eaton&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;John Lee&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;John Lucas&quot;' />
+          <groupfilter from='&quot;Joy Smith&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Julia Dunbar&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Karen Daniels&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Karl Braun&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Katrina Bavinger&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Kean Nguyen&quot;' />
+          <groupfilter from='&quot;Kelly Lampkin&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Ken Heidel&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Khloe Miller&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Larry Blacks&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Laura Armstrong&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Laurel Workman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Lauren Leatherbury&quot;' />
+          <groupfilter from='&quot;Linda Southworth&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Lindsay Williams&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Lisa Hazard&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Liz Willingham&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Mark Van Huff&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Matt Abelman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Matt Collins&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Maurice Satty&quot;' />
+          <groupfilter from='&quot;Michael Kennedy&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Michael Oakman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Mitch Webber&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Nancy Lomonaco&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Naresj Patel&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Nathan Cano&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Neil Französisch&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Nora Preis&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pamela Stobb&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Paul Gonzalez&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pauline Webber&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pete Takahito&quot;' />
+          <groupfilter from='&quot;Peter McVee&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Phillip Flathmann&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Raymond Messe&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Richard Bierner&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Rick Huthwaite&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Robert Waldorf&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Rose O&apos;Brian&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Roy Französisch&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Roy Phan&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Ruben Dartt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Sarah Foster&quot;' />
+          <groupfilter from='&quot;Stewart Visinsky&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Sung Shariari&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tamara Chand&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tiffany House&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Toby Braunhardt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tom Ashbrook&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tom Boeckenhauer&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tony Chapman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tracy Blumstein&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Trudy Brown&quot;' />
+          <groupfilter from='&quot;Valerie Dominguez&quot;' function='range' level='[Müşteri İsmi]' to='&quot;Vicky Freymann&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Victoria Wilson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Vivek Sundaresam&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Zuschuss Donatelli&quot;' />
+        </groupfilter>
+      </group>
+      <group caption='2012' name='[Müşteri İsmi Set]' name-style='unqualified' user:ui-builder='lasso-group'>
+        <groupfilter function='union'>
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Alex Avila&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Allen Rosenblatt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Andrew Gjertsen&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Anthony Witt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Astrea Jones&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Barbara Fisher&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Becky Castell&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Becky Martin&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Benjamin Venier&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Bobby Trafton&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Brendan Murry&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Brian Derr&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Brian Moss&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Bruce Degenhardt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cari MacIntyre&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cari Sayre&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Carol Triggs&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Catherine Glotzbach&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cathy Prescott&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Charles Crestani&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Christy Brittain&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Chuck Sachs&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cynthia Delaney&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Cynthia Voltz&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Dan Lawera&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Darren Powers&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Darrin Sayre&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Dave Hallsten&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;David Philippe&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;David Wiener&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Denise Monton&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Denny Ordway&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Dionis Lloyd&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Edward Becker&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Edward Hooks&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Emily Phan&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Erin Smith&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Frank Carlisle&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Frank Gastineau&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Fred Harton&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Fred Hopkins&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Fred Wasserman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jack Lebron&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jamie Frazer&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Janet Martin&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jay Fein&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jennifer Patt&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Jocasta Rupert&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Joe Elijah&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;John Grady&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Joni Sundaresam&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Juliana Krohn&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Justin Ritter&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Katrina Edelman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Kelly Collister&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Kristen Hastings&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Laurel Beltran&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Lena Radford&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Lindsay Castell&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Liz Preis&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Lori Olson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Maria Bertelson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Meg O&apos;Connel&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Michelle Arnett&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Michelle Huthwaite&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Michelle Tran&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Mick Brown&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Mike Kennedy&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Muhammed Yedwab&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Natalie Webber&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Nicole Brennan&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Nicole Fjeld&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Patrick Ryan&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Paul MacIntyre&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pauline Johnson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pete Armstrong&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Pierre Wener&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Ralph Arnett&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Rick Wilson&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Rob Lucas&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Roger Demir&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Sanjit Jacobs&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Sara Luxemburg&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Sean Miller&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Speros Goranitis&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Theresa Coyne&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Thomas Seio&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tony Chapman&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tracy Blumstein&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Tracy Poddar&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Trudy Brown&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Valerie Dominguez&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Vicky Freymann&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;Vivek Sundaresam&quot;' />
+          <groupfilter function='member' level='[Müşteri İsmi]' member='&quot;William Brown&quot;' />
+        </groupfilter>
+      </group>
+      <group caption='2012&amp;2013' delimiter=',' name='[Set 1]' name-style='unqualified'>
+        <groupfilter function='intersection'>
+          <groupfilter field='[Müşteri İsmi Set 2]' function='reference' />
+          <groupfilter field='[Müşteri İsmi Set]' function='reference' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Siparişler' id='Siparişler_B2A89C69CCD64D13BC237DC225771F62'>
+            <properties context=''>
+              <relation connection='excel-direct.17b2uid0ztyloj1anut9x186nnve' name='Siparişler' table='[Siparişler$]' type='table'>
+                <columns gridOrigin='A1:O1170:no:A1:O1170:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Sipariş ID' ordinal='0' />
+                  <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+                  <column datatype='date' name='Sevk Tarihi' ordinal='2' />
+                  <column datatype='string' name='Müşteri ID' ordinal='3' />
+                  <column datatype='string' name='Müşteri İsmi' ordinal='4' />
+                  <column datatype='string' name='Segment' ordinal='5' />
+                  <column datatype='string' name='Bölge' ordinal='6' />
+                  <column datatype='string' name='İl' ordinal='7' />
+                  <column datatype='string' name='İlçe' ordinal='8' />
+                  <column datatype='string' name='Ürün ID' ordinal='9' />
+                  <column datatype='string' name='Kategori' ordinal='10' />
+                  <column datatype='string' name='Alt Kategori' ordinal='11' />
+                  <column datatype='string' name='Ürün Adı' ordinal='12' />
+                  <column datatype='real' name='Satış' ordinal='13' />
+                  <column datatype='real' name='Kâr' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#1c1d1f' fontname='udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol' fontsize='14'>2012’de ürün satın alan müşterilerden kaçı 2013’te de ürün almıştır?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Siparişler (Global+Superstore+Orders+2016)' name='federated.0a8rdfy1na7bjp13lsnlm1hk467b' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a8rdfy1na7bjp13lsnlm1hk467b'>
+            <column datatype='string' name='[Müşteri İsmi]' role='dimension' type='nominal' />
+            <column-instance column='[Müşteri İsmi]' derivation='CountD' name='[ctd:Müşteri İsmi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[Set 1]' />
+          <slices>
+            <column>[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[Set 1]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[ctd:Müşteri İsmi:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D7E99029-F3C9-4E98-B224-08713F46B6D1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[Set 1]</field>
+            <field>[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[none:Müşteri İsmi:nk]</field>
+            <field>[federated.0a8rdfy1na7bjp13lsnlm1hk467b].[yr:Sipariş Tarihi:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{0EC9B910-AD1E-4610-A4FF-6C8F62FEEA04}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='116'>
+      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
+      qheEAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
