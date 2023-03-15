@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sipariş Listesi+ (Sipariş+Tablosu)' inline='true' name='federated.0ctt6ua0vnuvq9153mh7o1xrunoe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sipariş+Tablosu' name='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Sipariş+Tablosu.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Sipariş Listesi].[Sipariş ID]' />
+              <expression op='[Sipariş Detayı].[Sipariş ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Listesi' table='[&apos;Sipariş Listesi$&apos;]' type='table'>
+            <columns gridOrigin='A1:G4118:no:A1:G4118:0' header='yes' outcome='6'>
+              <column datatype='string' name='Sipariş ID' ordinal='0' />
+              <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+              <column datatype='string' name='Müşteri İsmi' ordinal='2' />
+              <column datatype='string' name='Şehir' ordinal='3' />
+              <column datatype='string' name='Ülke' ordinal='4' />
+              <column datatype='string' name='Segment' ordinal='5' />
+              <column datatype='date' name='Kargo Tarihi' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Detayı' table='[&apos;Sipariş Detayı$&apos;]' type='table'>
+            <columns gridOrigin='A1:H8048:no:A1:H8048:0' header='yes' outcome='6'>
+              <column datatype='string' name='Sipariş ID' ordinal='0' />
+              <column datatype='string' name='Ürün Adı' ordinal='1' />
+              <column datatype='real' name='İndirim Oranı' ordinal='2' />
+              <column datatype='integer' name='Satış' ordinal='3' />
+              <column datatype='integer' name='Kar' ordinal='4' />
+              <column datatype='integer' name='Miktar' ordinal='5' />
+              <column datatype='string' name='Kategori' ordinal='6' />
+              <column datatype='string' name='Alt Kategori' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Sipariş Listesi].[Sipariş ID]' />
+              <expression op='[Sipariş Detayı].[Sipariş ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Listesi' table='[&apos;Sipariş Listesi$&apos;]' type='table'>
+            <columns gridOrigin='A1:G4118:no:A1:G4118:0' header='yes' outcome='6'>
+              <column datatype='string' name='Sipariş ID' ordinal='0' />
+              <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+              <column datatype='string' name='Müşteri İsmi' ordinal='2' />
+              <column datatype='string' name='Şehir' ordinal='3' />
+              <column datatype='string' name='Ülke' ordinal='4' />
+              <column datatype='string' name='Segment' ordinal='5' />
+              <column datatype='date' name='Kargo Tarihi' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Detayı' table='[&apos;Sipariş Detayı$&apos;]' type='table'>
+            <columns gridOrigin='A1:H8048:no:A1:H8048:0' header='yes' outcome='6'>
+              <column datatype='string' name='Sipariş ID' ordinal='0' />
+              <column datatype='string' name='Ürün Adı' ordinal='1' />
+              <column datatype='real' name='İndirim Oranı' ordinal='2' />
+              <column datatype='integer' name='Satış' ordinal='3' />
+              <column datatype='integer' name='Kar' ordinal='4' />
+              <column datatype='integer' name='Miktar' ordinal='5' />
+              <column datatype='string' name='Kategori' ordinal='6' />
+              <column datatype='string' name='Alt Kategori' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Alt Kategori]' value='[Sipariş Detayı].[Alt Kategori]' />
+          <map key='[Kar]' value='[Sipariş Detayı].[Kar]' />
+          <map key='[Kargo Tarihi]' value='[Sipariş Listesi].[Kargo Tarihi]' />
+          <map key='[Kategori]' value='[Sipariş Detayı].[Kategori]' />
+          <map key='[Miktar]' value='[Sipariş Detayı].[Miktar]' />
+          <map key='[Müşteri İsmi]' value='[Sipariş Listesi].[Müşteri İsmi]' />
+          <map key='[Satış]' value='[Sipariş Detayı].[Satış]' />
+          <map key='[Segment]' value='[Sipariş Listesi].[Segment]' />
+          <map key='[Sipariş ID (Sipariş Detayı)]' value='[Sipariş Detayı].[Sipariş ID]' />
+          <map key='[Sipariş ID]' value='[Sipariş Listesi].[Sipariş ID]' />
+          <map key='[Sipariş Tarihi]' value='[Sipariş Listesi].[Sipariş Tarihi]' />
+          <map key='[Ülke]' value='[Sipariş Listesi].[Ülke]' />
+          <map key='[Ürün Adı]' value='[Sipariş Detayı].[Ürün Adı]' />
+          <map key='[İndirim Oranı]' value='[Sipariş Detayı].[İndirim Oranı]' />
+          <map key='[Şehir]' value='[Sipariş Listesi].[Şehir]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:G4118:no:A1:G4118:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H8048:no:A1:H8048:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sipariş ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sipariş ID]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Sipariş ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sipariş Tarihi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Sipariş Tarihi]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Sipariş Tarihi</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Müşteri İsmi</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Müşteri İsmi]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Müşteri İsmi</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Şehir</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Şehir]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Şehir</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ülke</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ülke]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Ülke</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kargo Tarihi</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Kargo Tarihi]</local-name>
+            <parent-name>[Sipariş Listesi]</parent-name>
+            <remote-alias>Kargo Tarihi</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sipariş ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sipariş ID (Sipariş Detayı)]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Sipariş ID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ürün Adı</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ürün Adı]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Ürün Adı</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>İndirim Oranı</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[İndirim Oranı]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>İndirim Oranı</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Satış</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Satış]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Satış</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kar]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Kar</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Miktar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Miktar]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Miktar</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kategori</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Kategori]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Kategori</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alt Kategori</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Alt Kategori]</local-name>
+            <parent-name>[Sipariş Detayı]</parent-name>
+            <remote-alias>Alt Kategori</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hedef Tutma' datatype='integer' name='[Calculation_529735910879735808]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([Satış])-SUM([federated.00yfaec0aof4zy1a4omaf0c6ddbf].[Hedef])' />
+      </column>
+      <column datatype='string' name='[Kategori]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sipariş Listesi' datatype='table' name='[__tableau_internal_object_id__].[Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2]' role='measure' type='quantitative' />
+      <column-instance column='[Kategori]' derivation='None' name='[none:Kategori:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Kategori:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Furniture&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Technology&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Office Supplies&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <datasource-dependencies datasource='federated.00yfaec0aof4zy1a4omaf0c6ddbf'>
+        <column datatype='integer' name='[Hedef]' role='measure' type='quantitative' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sipariş Listesi' id='Sipariş Listesi_A8D106ED64F34344A186E4FA59189FF2'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Sipariş Listesi].[Sipariş ID]' />
+                    <expression op='[Sipariş Detayı].[Sipariş ID]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Listesi' table='[&apos;Sipariş Listesi$&apos;]' type='table'>
+                  <columns gridOrigin='A1:G4118:no:A1:G4118:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Sipariş ID' ordinal='0' />
+                    <column datatype='date' name='Sipariş Tarihi' ordinal='1' />
+                    <column datatype='string' name='Müşteri İsmi' ordinal='2' />
+                    <column datatype='string' name='Şehir' ordinal='3' />
+                    <column datatype='string' name='Ülke' ordinal='4' />
+                    <column datatype='string' name='Segment' ordinal='5' />
+                    <column datatype='date' name='Kargo Tarihi' ordinal='6' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0kxqpb214rq94511a2jpj1lzcj9c' name='Sipariş Detayı' table='[&apos;Sipariş Detayı$&apos;]' type='table'>
+                  <columns gridOrigin='A1:H8048:no:A1:H8048:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Sipariş ID' ordinal='0' />
+                    <column datatype='string' name='Ürün Adı' ordinal='1' />
+                    <column datatype='real' name='İndirim Oranı' ordinal='2' />
+                    <column datatype='integer' name='Satış' ordinal='3' />
+                    <column datatype='integer' name='Kar' ordinal='4' />
+                    <column datatype='integer' name='Miktar' ordinal='5' />
+                    <column datatype='string' name='Kategori' ordinal='6' />
+                    <column datatype='string' name='Alt Kategori' ordinal='7' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Satış Hedefleri (Sipariş+Tablosu)' inline='true' name='federated.00yfaec0aof4zy1a4omaf0c6ddbf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Sipariş+Tablosu' name='excel-direct.1jvg4qr0pcdnrc14thpzn07mkb0e'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Sipariş+Tablosu.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1jvg4qr0pcdnrc14thpzn07mkb0e' name='Satış Hedefleri' table='[&apos;Satış Hedefleri$&apos;]' type='table'>
+          <columns gridOrigin='A1:C145:no:A1:C145:0' header='yes' outcome='6'>
+            <column datatype='date' name='Tarih' ordinal='0' />
+            <column datatype='string' name='Kategori' ordinal='1' />
+            <column datatype='integer' name='Hedef' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1jvg4qr0pcdnrc14thpzn07mkb0e' name='Satış Hedefleri' table='[&apos;Satış Hedefleri$&apos;]' type='table'>
+          <columns gridOrigin='A1:C145:no:A1:C145:0' header='yes' outcome='6'>
+            <column datatype='date' name='Tarih' ordinal='0' />
+            <column datatype='string' name='Kategori' ordinal='1' />
+            <column datatype='integer' name='Hedef' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Satış Hedefleri]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C145:no:A1:C145:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tarih</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Tarih]</local-name>
+            <parent-name>[Satış Hedefleri]</parent-name>
+            <remote-alias>Tarih</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Satış Hedefleri_59E3F5AE5F4B4428B1715581C519FA71]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kategori</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Kategori]</local-name>
+            <parent-name>[Satış Hedefleri]</parent-name>
+            <remote-alias>Kategori</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Satış Hedefleri_59E3F5AE5F4B4428B1715581C519FA71]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hedef</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hedef]</local-name>
+            <parent-name>[Satış Hedefleri]</parent-name>
+            <remote-alias>Hedef</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Satış Hedefleri_59E3F5AE5F4B4428B1715581C519FA71]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Satış Hedefleri' datatype='table' name='[__tableau_internal_object_id__].[Satış Hedefleri_59E3F5AE5F4B4428B1715581C519FA71]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Satış Hedefleri' id='Satış Hedefleri_59E3F5AE5F4B4428B1715581C519FA71'>
+            <properties context=''>
+              <relation connection='excel-direct.1jvg4qr0pcdnrc14thpzn07mkb0e' name='Satış Hedefleri' table='[&apos;Satış Hedefleri$&apos;]' type='table'>
+                <columns gridOrigin='A1:C145:no:A1:C145:0' header='yes' outcome='6'>
+                  <column datatype='date' name='Tarih' ordinal='0' />
+                  <column datatype='string' name='Kategori' ordinal='1' />
+                  <column datatype='integer' name='Hedef' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.00yfaec0aof4zy1a4omaf0c6ddbf'>
+      <column datatype='string' name='[Kategori]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Tarih]' role='dimension' type='ordinal' />
+      <column-instance column='[Tarih]' derivation='Month' name='[mn:Tarih:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Kategori]' derivation='None' name='[none:Kategori:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Tarih]' derivation='Month-Trunc' name='[tmn:Tarih:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Tarih]' derivation='Year-Trunc' name='[tyr:Tarih:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Tarih]' derivation='Year' name='[yr:Tarih:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.0ctt6ua0vnuvq9153mh7o1xrunoe'>
+      <column datatype='string' name='[Kategori]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Sipariş Tarihi]' role='dimension' type='ordinal' />
+      <column-instance column='[Sipariş Tarihi]' derivation='Month' name='[mn:Sipariş Tarihi:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Kategori]' derivation='None' name='[none:Kategori:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sipariş Tarihi]' derivation='Month-Trunc' name='[tmn:Sipariş Tarihi:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Sipariş Tarihi]' derivation='Year-Trunc' name='[tyr:Sipariş Tarihi:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Sipariş Tarihi]' derivation='Year' name='[yr:Sipariş Tarihi:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.0ctt6ua0vnuvq9153mh7o1xrunoe' target='federated.00yfaec0aof4zy1a4omaf0c6ddbf'>
+      <column-mapping>
+        <map key='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[mn:Sipariş Tarihi:ok]' value='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[mn:Tarih:ok]' />
+        <map key='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]' value='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[none:Kategori:nk]' />
+        <map key='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[tmn:Sipariş Tarihi:ok]' value='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[tmn:Tarih:ok]' />
+        <map key='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[tyr:Sipariş Tarihi:ok]' value='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[tyr:Tarih:ok]' />
+        <map key='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[yr:Sipariş Tarihi:ok]' value='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[yr:Tarih:ok]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sipariş Listesi+ (Sipariş+Tablosu)' name='federated.0ctt6ua0vnuvq9153mh7o1xrunoe' />
+            <datasource caption='Satış Hedefleri (Sipariş+Tablosu)' name='federated.00yfaec0aof4zy1a4omaf0c6ddbf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00yfaec0aof4zy1a4omaf0c6ddbf'>
+            <column datatype='integer' name='[Hedef]' role='measure' type='quantitative' />
+            <column-instance column='[Hedef]' derivation='Sum' name='[sum:Hedef:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0ctt6ua0vnuvq9153mh7o1xrunoe'>
+            <column caption='Hedef Tutma' datatype='integer' name='[Calculation_529735910879735808]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([Satış])-SUM([federated.00yfaec0aof4zy1a4omaf0c6ddbf].[Hedef])' />
+            </column>
+            <column datatype='string' name='[Kategori]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Satış]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Sipariş Tarihi]' role='dimension' type='ordinal' />
+            <column-instance column='[Kategori]' derivation='None' name='[none:Kategori:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Satış]' derivation='Sum' name='[sum:Satış:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sipariş Tarihi]' derivation='Month-Trunc' name='[tmn:Sipariş Tarihi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_529735910879735808]' derivation='User' name='[usr:Calculation_529735910879735808:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]'>
+            <groupfilter function='member' level='[none:Kategori:nk]' member='&quot;Furniture&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[sum:Hedef:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' field='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[sum:Satış:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[sum:Satış:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.00yfaec0aof4zy1a4omaf0c6ddbf].[sum:Hedef:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[usr:Calculation_529735910879735808:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[usr:Calculation_529735910879735808:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk] * ([federated.00yfaec0aof4zy1a4omaf0c6ddbf].[sum:Hedef:qk] + ([federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[sum:Satış:qk] + [federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[usr:Calculation_529735910879735808:qk])))</rows>
+        <cols>[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[tmn:Sipariş Tarihi:qk]</cols>
+      </table>
+      <simple-id uuid='{BA60075F-B6AA-4093-8B35-5BFC42365A83}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]' type='color' />
+            <card pane-specification-id='3' param='[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[usr:Calculation_529735910879735808:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[none:Kategori:nk]</field>
+            <field>[federated.0ctt6ua0vnuvq9153mh7o1xrunoe].[yr:Sipariş Tarihi:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9C77477B-90C1-4709-9383-6CFEB1D665C3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
