@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Düzenlenmiş Veri (Okul+Notları)' inline='true' name='federated.058ysru1c6xcpf1fnkukf04uvfwl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Okul+Notları' name='excel-direct.15gwgoc184kgyx1ekb2ar0dx44eb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Okul+Notları.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.15gwgoc184kgyx1ekb2ar0dx44eb' name='Düzenlenmiş Veri' table='[&apos;Düzenlenmiş Veri$&apos;]' type='table'>
+          <columns gridOrigin='A1:E10:no:A1:E10:0' header='yes' outcome='2'>
+            <column datatype='string' name='Öğrenci No' ordinal='0' />
+            <column datatype='string' name='Cinsiyet' ordinal='1' />
+            <column datatype='string' name='Okul Adı' ordinal='2' />
+            <column datatype='string' name='Ders' ordinal='3' />
+            <column datatype='integer' name='Aldığı Puan' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.15gwgoc184kgyx1ekb2ar0dx44eb' name='Düzenlenmiş Veri' table='[&apos;Düzenlenmiş Veri$&apos;]' type='table'>
+          <columns gridOrigin='A1:E10:no:A1:E10:0' header='yes' outcome='2'>
+            <column datatype='string' name='Öğrenci No' ordinal='0' />
+            <column datatype='string' name='Cinsiyet' ordinal='1' />
+            <column datatype='string' name='Okul Adı' ordinal='2' />
+            <column datatype='string' name='Ders' ordinal='3' />
+            <column datatype='integer' name='Aldığı Puan' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Öğrenci No</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Öğrenci No]</local-name>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias>Öğrenci No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cinsiyet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cinsiyet]</local-name>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias>Cinsiyet</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Okul Adı</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Okul Adı]</local-name>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias>Okul Adı</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ders</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ders]</local-name>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias>Ders</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Aldığı Puan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Aldığı Puan]</local-name>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias>Aldığı Puan</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Düzenlenmiş Veri]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E10:no:A1:E10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Düzenlenmiş Veri' datatype='table' name='[__tableau_internal_object_id__].[Düzenlenmiş Veri_1FA78B7B11204E00A8941C18E69D79F7]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Öğrenci No]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Düzenlenmiş Veri' id='Düzenlenmiş Veri_1FA78B7B11204E00A8941C18E69D79F7'>
+            <properties context=''>
+              <relation connection='excel-direct.15gwgoc184kgyx1ekb2ar0dx44eb' name='Düzenlenmiş Veri' table='[&apos;Düzenlenmiş Veri$&apos;]' type='table'>
+                <columns gridOrigin='A1:E10:no:A1:E10:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Öğrenci No' ordinal='0' />
+                  <column datatype='string' name='Cinsiyet' ordinal='1' />
+                  <column datatype='string' name='Okul Adı' ordinal='2' />
+                  <column datatype='string' name='Ders' ordinal='3' />
+                  <column datatype='integer' name='Aldığı Puan' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Düzenlenmiş Veri (Okul+Notları)' name='federated.058ysru1c6xcpf1fnkukf04uvfwl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.058ysru1c6xcpf1fnkukf04uvfwl'>
+            <column datatype='integer' name='[Aldığı Puan]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Cinsiyet]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Ders]' role='dimension' type='nominal' />
+            <column-instance column='[Cinsiyet]' derivation='None' name='[none:Cinsiyet:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ders]' derivation='None' name='[none:Ders:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Öğrenci No]' derivation='None' name='[none:Öğrenci No:ok]' pivot='key' type='nominal' />
+            <column-instance column='[Aldığı Puan]' derivation='Sum' name='[sum:Aldığı Puan:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[Öğrenci No]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Cinsiyet:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.058ysru1c6xcpf1fnkukf04uvfwl].[sum:Aldığı Puan:qk]</rows>
+        <cols>([federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Öğrenci No:ok] / [federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Ders:nk])</cols>
+      </table>
+      <simple-id uuid='{D1E0233F-BCC2-4289-A578-B8A5A1775C2B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Cinsiyet:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Cinsiyet:nk]</field>
+            <field>[federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Ders:nk]</field>
+            <field>[federated.058ysru1c6xcpf1fnkukf04uvfwl].[none:Öğrenci No:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{007F4EDC-D5C0-468D-B074-6EB17869D5F8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      TJH/D20WZeLuMLcoAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
