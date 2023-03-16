@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Okul Notları A1:F6+ (Okul+Notları+DI-ST)' inline='true' name='federated.158grf31u40mxn13cdsjh1gqr7tc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Okul+Notları+DI-ST' name='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/Okul+Notları+DI-ST.xlsx' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Matematik]' />
+            <value name='[Tarih]' />
+            <value name='[İngilizce]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Okul Notları A1:F6+].[Matematik]' />
+              <field name='[Okul Notları A1:F6+].[Tarih]' />
+              <field name='[Okul Notları A1:F6+].[İngilizce]' />
+            </group>
+          </groups>
+          <relation all='true' name='Okul Notları A1:F6+' type='union'>
+            <columns>
+              <column datatype='integer' name='Öğrenci No' />
+              <column datatype='string' name='Cinsiyet' />
+              <column datatype='string' name='Okul Adı' />
+              <column datatype='integer' name='Matematik' />
+              <column datatype='integer' name='İngilizce' />
+              <column datatype='integer' name='Tarih' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A1:F6' table='[Okul Notları$A01:F06]' type='table'>
+              <columns gridOrigin='A1:F6:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                <column datatype='string' name='Cinsiyet' ordinal='1' />
+                <column datatype='string' name='Okul Adı' ordinal='2' />
+                <column datatype='integer' name='Matematik' ordinal='3' />
+                <column datatype='integer' name='İngilizce' ordinal='4' />
+                <column datatype='integer' name='Tarih' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A10:F14' table='[Okul Notları$A10:F14]' type='table'>
+              <columns gridOrigin='A10:F14:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                <column datatype='string' name='Cinsiyet' ordinal='1' />
+                <column datatype='string' name='Okul Adı' ordinal='2' />
+                <column datatype='integer' name='Matematik' ordinal='3' />
+                <column datatype='integer' name='İngilizce' ordinal='4' />
+                <column datatype='integer' name='Tarih' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Matematik]' />
+            <value name='[Tarih]' />
+            <value name='[İngilizce]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Okul Notları A1:F6+].[Matematik]' />
+              <field name='[Okul Notları A1:F6+].[Tarih]' />
+              <field name='[Okul Notları A1:F6+].[İngilizce]' />
+            </group>
+          </groups>
+          <relation all='true' name='Okul Notları A1:F6+' type='union'>
+            <columns>
+              <column datatype='integer' name='Öğrenci No' />
+              <column datatype='string' name='Cinsiyet' />
+              <column datatype='string' name='Okul Adı' />
+              <column datatype='integer' name='Matematik' />
+              <column datatype='integer' name='İngilizce' />
+              <column datatype='integer' name='Tarih' />
+              <column datatype='string' name='Sheet' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A1:F6' table='[Okul Notları$A01:F06]' type='table'>
+              <columns gridOrigin='A1:F6:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                <column datatype='string' name='Cinsiyet' ordinal='1' />
+                <column datatype='string' name='Okul Adı' ordinal='2' />
+                <column datatype='integer' name='Matematik' ordinal='3' />
+                <column datatype='integer' name='İngilizce' ordinal='4' />
+                <column datatype='integer' name='Tarih' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A10:F14' table='[Okul Notları$A10:F14]' type='table'>
+              <columns gridOrigin='A10:F14:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                <column datatype='string' name='Cinsiyet' ordinal='1' />
+                <column datatype='string' name='Okul Adı' ordinal='2' />
+                <column datatype='integer' name='Matematik' ordinal='3' />
+                <column datatype='integer' name='İngilizce' ordinal='4' />
+                <column datatype='integer' name='Tarih' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Öğrenci No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Öğrenci No]</local-name>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias>Öğrenci No</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cinsiyet</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Cinsiyet]</local-name>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias>Cinsiyet</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Okul Adı</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Okul Adı]</local-name>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias>Okul Adı</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sheet</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sheet]</local-name>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias>Sheet</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Okul Notları A1:F6+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Ders' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Aldığı Puan' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Sheet]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Okul Notları A1:F6' datatype='table' name='[__tableau_internal_object_id__].[Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Okul Notları A1:F6' id='Okul Notları$A01:F06_C3433A16A7F342FA9E44AB0C51F76A29'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Matematik]' />
+                  <value name='[Tarih]' />
+                  <value name='[İngilizce]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Okul Notları A1:F6+].[Matematik]' />
+                    <field name='[Okul Notları A1:F6+].[Tarih]' />
+                    <field name='[Okul Notları A1:F6+].[İngilizce]' />
+                  </group>
+                </groups>
+                <relation all='true' name='Okul Notları A1:F6+' type='union'>
+                  <columns>
+                    <column datatype='integer' name='Öğrenci No' />
+                    <column datatype='string' name='Cinsiyet' />
+                    <column datatype='string' name='Okul Adı' />
+                    <column datatype='integer' name='Matematik' />
+                    <column datatype='integer' name='İngilizce' />
+                    <column datatype='integer' name='Tarih' />
+                    <column datatype='string' name='Sheet' />
+                    <column datatype='string' name='Table Name' />
+                  </columns>
+                  <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A1:F6' table='[Okul Notları$A01:F06]' type='table'>
+                    <columns gridOrigin='A1:F6:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                      <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                      <column datatype='string' name='Cinsiyet' ordinal='1' />
+                      <column datatype='string' name='Okul Adı' ordinal='2' />
+                      <column datatype='integer' name='Matematik' ordinal='3' />
+                      <column datatype='integer' name='İngilizce' ordinal='4' />
+                      <column datatype='integer' name='Tarih' ordinal='5' />
+                    </columns>
+                  </relation>
+                  <relation connection='excel-direct.1jin8hk0iccypc10ubyhx0lsnpe1' name='Okul Notları A10:F14' table='[Okul Notları$A10:F14]' type='table'>
+                    <columns gridOrigin='A10:F14:no:A1:F16:1' lost='0' outcome='1' processed='12'>
+                      <column datatype='integer' name='Öğrenci No' ordinal='0' />
+                      <column datatype='string' name='Cinsiyet' ordinal='1' />
+                      <column datatype='string' name='Okul Adı' ordinal='2' />
+                      <column datatype='integer' name='Matematik' ordinal='3' />
+                      <column datatype='integer' name='İngilizce' ordinal='4' />
+                      <column datatype='integer' name='Tarih' ordinal='5' />
+                    </columns>
+                  </relation>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8D7BF526-1D44-463C-A6E7-C54318DB40A9}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3464C51F-11BC-4B57-95FC-B744D099A710}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
