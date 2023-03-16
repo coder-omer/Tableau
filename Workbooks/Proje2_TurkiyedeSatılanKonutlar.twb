@@ -1,0 +1,1479 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Asıl Veri (İllere+Göre+Satılan+Konut+Sayısı)' inline='true' name='federated.1llsq070s6c0de19zewyy1i0ixk7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='İllere+Göre+Satılan+Konut+Sayısı' name='excel-direct.05dingn06s5dpx1gqn86w1a9221e'>
+            <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/udemy_kurs/İllere+Göre+Satılan+Konut+Sayısı.xls' interpretationMode='1' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2013 Aralık]' />
+            <value name='[2013 Ağustos]' />
+            <value name='[2013 Ekim]' />
+            <value name='[2013 Eylül]' />
+            <value name='[2013 Haziran]' />
+            <value name='[2013 Kasım]' />
+            <value name='[2013 Mart]' />
+            <value name='[2013 Mayıs]' />
+            <value name='[2013 Nisan]' />
+            <value name='[2013 Ocak]' />
+            <value name='[2013 Temmuz]' />
+            <value name='[2013 Şubat]' />
+            <value name='[2014 Aralık]' />
+            <value name='[2014 Ağustos]' />
+            <value name='[2014 Ekim]' />
+            <value name='[2014 Eylül]' />
+            <value name='[2014 Haziran]' />
+            <value name='[2014 Kasım]' />
+            <value name='[2014 Mart]' />
+            <value name='[2014 Mayıs]' />
+            <value name='[2014 Nisan]' />
+            <value name='[2014 Ocak]' />
+            <value name='[2014 Temmuz]' />
+            <value name='[2014 Şubat]' />
+            <value name='[2015 Aralık]' />
+            <value name='[2015 Ağustos]' />
+            <value name='[2015 Ekim]' />
+            <value name='[2015 Eylül]' />
+            <value name='[2015 Haziran]' />
+            <value name='[2015 Kasım]' />
+            <value name='[2015 Mart]' />
+            <value name='[2015 Mayıs]' />
+            <value name='[2015 Nisan]' />
+            <value name='[2015 Ocak]' />
+            <value name='[2015 Temmuz]' />
+            <value name='[2015 Şubat]' />
+            <value name='[2016 Aralık]' />
+            <value name='[2016 Ağustos]' />
+            <value name='[2016 Ekim]' />
+            <value name='[2016 Eylül]' />
+            <value name='[2016 Haziran]' />
+            <value name='[2016 Kasım]' />
+            <value name='[2016 Mart]' />
+            <value name='[2016 Mayıs]' />
+            <value name='[2016 Nisan]' />
+            <value name='[2016 Ocak]' />
+            <value name='[2016 Temmuz]' />
+            <value name='[2016 Şubat]' />
+            <value name='[2017 Aralık]' />
+            <value name='[2017 Ağustos]' />
+            <value name='[2017 Ekim]' />
+            <value name='[2017 Eylül]' />
+            <value name='[2017 Haziran]' />
+            <value name='[2017 Kasım]' />
+            <value name='[2017 Mart]' />
+            <value name='[2017 Mayıs]' />
+            <value name='[2017 Nisan]' />
+            <value name='[2017 Ocak]' />
+            <value name='[2017 Temmuz]' />
+            <value name='[2017 Şubat]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Asıl Veri].[2013 Aralık]' />
+              <field name='[Asıl Veri].[2013 Ağustos]' />
+              <field name='[Asıl Veri].[2013 Ekim]' />
+              <field name='[Asıl Veri].[2013 Eylül]' />
+              <field name='[Asıl Veri].[2013 Haziran]' />
+              <field name='[Asıl Veri].[2013 Kasım]' />
+              <field name='[Asıl Veri].[2013 Mart]' />
+              <field name='[Asıl Veri].[2013 Mayıs]' />
+              <field name='[Asıl Veri].[2013 Nisan]' />
+              <field name='[Asıl Veri].[2013 Ocak]' />
+              <field name='[Asıl Veri].[2013 Temmuz]' />
+              <field name='[Asıl Veri].[2013 Şubat]' />
+              <field name='[Asıl Veri].[2014 Aralık]' />
+              <field name='[Asıl Veri].[2014 Ağustos]' />
+              <field name='[Asıl Veri].[2014 Ekim]' />
+              <field name='[Asıl Veri].[2014 Eylül]' />
+              <field name='[Asıl Veri].[2014 Haziran]' />
+              <field name='[Asıl Veri].[2014 Kasım]' />
+              <field name='[Asıl Veri].[2014 Mart]' />
+              <field name='[Asıl Veri].[2014 Mayıs]' />
+              <field name='[Asıl Veri].[2014 Nisan]' />
+              <field name='[Asıl Veri].[2014 Ocak]' />
+              <field name='[Asıl Veri].[2014 Temmuz]' />
+              <field name='[Asıl Veri].[2014 Şubat]' />
+              <field name='[Asıl Veri].[2015 Aralık]' />
+              <field name='[Asıl Veri].[2015 Ağustos]' />
+              <field name='[Asıl Veri].[2015 Ekim]' />
+              <field name='[Asıl Veri].[2015 Eylül]' />
+              <field name='[Asıl Veri].[2015 Haziran]' />
+              <field name='[Asıl Veri].[2015 Kasım]' />
+              <field name='[Asıl Veri].[2015 Mart]' />
+              <field name='[Asıl Veri].[2015 Mayıs]' />
+              <field name='[Asıl Veri].[2015 Nisan]' />
+              <field name='[Asıl Veri].[2015 Ocak]' />
+              <field name='[Asıl Veri].[2015 Temmuz]' />
+              <field name='[Asıl Veri].[2015 Şubat]' />
+              <field name='[Asıl Veri].[2016 Aralık]' />
+              <field name='[Asıl Veri].[2016 Ağustos]' />
+              <field name='[Asıl Veri].[2016 Ekim]' />
+              <field name='[Asıl Veri].[2016 Eylül]' />
+              <field name='[Asıl Veri].[2016 Haziran]' />
+              <field name='[Asıl Veri].[2016 Kasım]' />
+              <field name='[Asıl Veri].[2016 Mart]' />
+              <field name='[Asıl Veri].[2016 Mayıs]' />
+              <field name='[Asıl Veri].[2016 Nisan]' />
+              <field name='[Asıl Veri].[2016 Ocak]' />
+              <field name='[Asıl Veri].[2016 Temmuz]' />
+              <field name='[Asıl Veri].[2016 Şubat]' />
+              <field name='[Asıl Veri].[2017 Aralık]' />
+              <field name='[Asıl Veri].[2017 Ağustos]' />
+              <field name='[Asıl Veri].[2017 Ekim]' />
+              <field name='[Asıl Veri].[2017 Eylül]' />
+              <field name='[Asıl Veri].[2017 Haziran]' />
+              <field name='[Asıl Veri].[2017 Kasım]' />
+              <field name='[Asıl Veri].[2017 Mart]' />
+              <field name='[Asıl Veri].[2017 Mayıs]' />
+              <field name='[Asıl Veri].[2017 Nisan]' />
+              <field name='[Asıl Veri].[2017 Ocak]' />
+              <field name='[Asıl Veri].[2017 Temmuz]' />
+              <field name='[Asıl Veri].[2017 Şubat]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.05dingn06s5dpx1gqn86w1a9221e' name='Asıl Veri' table='[&apos;Asıl Veri$&apos;]' type='table'>
+            <columns gridOrigin='A1:BL85:no:A1:BL85:2' header='no' lost='0' outcome='1' processed='5021'>
+              <column datatype='string' name='F1' ordinal='0' />
+              <column datatype='integer' name='2013 Ocak' ordinal='1' />
+              <column datatype='integer' name='2013 Şubat' ordinal='2' />
+              <column datatype='integer' name='2013 Mart' ordinal='3' />
+              <column datatype='integer' name='2013 Nisan' ordinal='4' />
+              <column datatype='integer' name='2013 Mayıs' ordinal='5' />
+              <column datatype='integer' name='2013 Haziran' ordinal='6' />
+              <column datatype='integer' name='2013 Temmuz' ordinal='7' />
+              <column datatype='integer' name='2013 Ağustos' ordinal='8' />
+              <column datatype='integer' name='2013 Eylül' ordinal='9' />
+              <column datatype='integer' name='2013 Ekim' ordinal='10' />
+              <column datatype='integer' name='2013 Kasım' ordinal='11' />
+              <column datatype='integer' name='2013 Aralık' ordinal='12' />
+              <column datatype='real' name='F14' ordinal='13' />
+              <column datatype='integer' name='2014 Ocak' ordinal='14' />
+              <column datatype='integer' name='2014 Şubat' ordinal='15' />
+              <column datatype='integer' name='2014 Mart' ordinal='16' />
+              <column datatype='integer' name='2014 Nisan' ordinal='17' />
+              <column datatype='integer' name='2014 Mayıs' ordinal='18' />
+              <column datatype='integer' name='2014 Haziran' ordinal='19' />
+              <column datatype='integer' name='2014 Temmuz' ordinal='20' />
+              <column datatype='integer' name='2014 Ağustos' ordinal='21' />
+              <column datatype='integer' name='2014 Eylül' ordinal='22' />
+              <column datatype='integer' name='2014 Ekim' ordinal='23' />
+              <column datatype='integer' name='2014 Kasım' ordinal='24' />
+              <column datatype='integer' name='2014 Aralık' ordinal='25' />
+              <column datatype='integer' name='2015 Ocak' ordinal='26' />
+              <column datatype='integer' name='2015 Şubat' ordinal='27' />
+              <column datatype='integer' name='2015 Mart' ordinal='28' />
+              <column datatype='integer' name='2015 Nisan' ordinal='29' />
+              <column datatype='integer' name='2015 Mayıs' ordinal='30' />
+              <column datatype='integer' name='2015 Haziran' ordinal='31' />
+              <column datatype='integer' name='2015 Temmuz' ordinal='32' />
+              <column datatype='integer' name='2015 Ağustos' ordinal='33' />
+              <column datatype='integer' name='2015 Eylül' ordinal='34' />
+              <column datatype='integer' name='2015 Ekim' ordinal='35' />
+              <column datatype='integer' name='2015 Kasım' ordinal='36' />
+              <column datatype='integer' name='2015 Aralık' ordinal='37' />
+              <column datatype='integer' name='2016 Ocak' ordinal='38' />
+              <column datatype='integer' name='2016 Şubat' ordinal='39' />
+              <column datatype='integer' name='2016 Mart' ordinal='40' />
+              <column datatype='integer' name='2016 Nisan' ordinal='41' />
+              <column datatype='integer' name='2016 Mayıs' ordinal='42' />
+              <column datatype='integer' name='2016 Haziran' ordinal='43' />
+              <column datatype='integer' name='2016 Temmuz' ordinal='44' />
+              <column datatype='integer' name='2016 Ağustos' ordinal='45' />
+              <column datatype='integer' name='2016 Eylül' ordinal='46' />
+              <column datatype='integer' name='2016 Ekim' ordinal='47' />
+              <column datatype='integer' name='2016 Kasım' ordinal='48' />
+              <column datatype='integer' name='2016 Aralık' ordinal='49' />
+              <column datatype='integer' name='2017 Ocak' ordinal='50' />
+              <column datatype='integer' name='2017 Şubat' ordinal='51' />
+              <column datatype='integer' name='2017 Mart' ordinal='52' />
+              <column datatype='integer' name='2017 Nisan' ordinal='53' />
+              <column datatype='integer' name='2017 Mayıs' ordinal='54' />
+              <column datatype='integer' name='2017 Haziran' ordinal='55' />
+              <column datatype='integer' name='2017 Temmuz' ordinal='56' />
+              <column datatype='integer' name='2017 Ağustos' ordinal='57' />
+              <column datatype='integer' name='2017 Eylül' ordinal='58' />
+              <column datatype='integer' name='2017 Ekim' ordinal='59' />
+              <column datatype='integer' name='2017 Kasım' ordinal='60' />
+              <column datatype='integer' name='2017 Aralık' ordinal='61' />
+              <column datatype='integer' name='2018 Ocak' ordinal='62' />
+              <column datatype='integer' name='Şubat' ordinal='63' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2013 Aralık]' />
+            <value name='[2013 Ağustos]' />
+            <value name='[2013 Ekim]' />
+            <value name='[2013 Eylül]' />
+            <value name='[2013 Haziran]' />
+            <value name='[2013 Kasım]' />
+            <value name='[2013 Mart]' />
+            <value name='[2013 Mayıs]' />
+            <value name='[2013 Nisan]' />
+            <value name='[2013 Ocak]' />
+            <value name='[2013 Temmuz]' />
+            <value name='[2013 Şubat]' />
+            <value name='[2014 Aralık]' />
+            <value name='[2014 Ağustos]' />
+            <value name='[2014 Ekim]' />
+            <value name='[2014 Eylül]' />
+            <value name='[2014 Haziran]' />
+            <value name='[2014 Kasım]' />
+            <value name='[2014 Mart]' />
+            <value name='[2014 Mayıs]' />
+            <value name='[2014 Nisan]' />
+            <value name='[2014 Ocak]' />
+            <value name='[2014 Temmuz]' />
+            <value name='[2014 Şubat]' />
+            <value name='[2015 Aralık]' />
+            <value name='[2015 Ağustos]' />
+            <value name='[2015 Ekim]' />
+            <value name='[2015 Eylül]' />
+            <value name='[2015 Haziran]' />
+            <value name='[2015 Kasım]' />
+            <value name='[2015 Mart]' />
+            <value name='[2015 Mayıs]' />
+            <value name='[2015 Nisan]' />
+            <value name='[2015 Ocak]' />
+            <value name='[2015 Temmuz]' />
+            <value name='[2015 Şubat]' />
+            <value name='[2016 Aralık]' />
+            <value name='[2016 Ağustos]' />
+            <value name='[2016 Ekim]' />
+            <value name='[2016 Eylül]' />
+            <value name='[2016 Haziran]' />
+            <value name='[2016 Kasım]' />
+            <value name='[2016 Mart]' />
+            <value name='[2016 Mayıs]' />
+            <value name='[2016 Nisan]' />
+            <value name='[2016 Ocak]' />
+            <value name='[2016 Temmuz]' />
+            <value name='[2016 Şubat]' />
+            <value name='[2017 Aralık]' />
+            <value name='[2017 Ağustos]' />
+            <value name='[2017 Ekim]' />
+            <value name='[2017 Eylül]' />
+            <value name='[2017 Haziran]' />
+            <value name='[2017 Kasım]' />
+            <value name='[2017 Mart]' />
+            <value name='[2017 Mayıs]' />
+            <value name='[2017 Nisan]' />
+            <value name='[2017 Ocak]' />
+            <value name='[2017 Temmuz]' />
+            <value name='[2017 Şubat]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[Asıl Veri].[2013 Aralık]' />
+              <field name='[Asıl Veri].[2013 Ağustos]' />
+              <field name='[Asıl Veri].[2013 Ekim]' />
+              <field name='[Asıl Veri].[2013 Eylül]' />
+              <field name='[Asıl Veri].[2013 Haziran]' />
+              <field name='[Asıl Veri].[2013 Kasım]' />
+              <field name='[Asıl Veri].[2013 Mart]' />
+              <field name='[Asıl Veri].[2013 Mayıs]' />
+              <field name='[Asıl Veri].[2013 Nisan]' />
+              <field name='[Asıl Veri].[2013 Ocak]' />
+              <field name='[Asıl Veri].[2013 Temmuz]' />
+              <field name='[Asıl Veri].[2013 Şubat]' />
+              <field name='[Asıl Veri].[2014 Aralık]' />
+              <field name='[Asıl Veri].[2014 Ağustos]' />
+              <field name='[Asıl Veri].[2014 Ekim]' />
+              <field name='[Asıl Veri].[2014 Eylül]' />
+              <field name='[Asıl Veri].[2014 Haziran]' />
+              <field name='[Asıl Veri].[2014 Kasım]' />
+              <field name='[Asıl Veri].[2014 Mart]' />
+              <field name='[Asıl Veri].[2014 Mayıs]' />
+              <field name='[Asıl Veri].[2014 Nisan]' />
+              <field name='[Asıl Veri].[2014 Ocak]' />
+              <field name='[Asıl Veri].[2014 Temmuz]' />
+              <field name='[Asıl Veri].[2014 Şubat]' />
+              <field name='[Asıl Veri].[2015 Aralık]' />
+              <field name='[Asıl Veri].[2015 Ağustos]' />
+              <field name='[Asıl Veri].[2015 Ekim]' />
+              <field name='[Asıl Veri].[2015 Eylül]' />
+              <field name='[Asıl Veri].[2015 Haziran]' />
+              <field name='[Asıl Veri].[2015 Kasım]' />
+              <field name='[Asıl Veri].[2015 Mart]' />
+              <field name='[Asıl Veri].[2015 Mayıs]' />
+              <field name='[Asıl Veri].[2015 Nisan]' />
+              <field name='[Asıl Veri].[2015 Ocak]' />
+              <field name='[Asıl Veri].[2015 Temmuz]' />
+              <field name='[Asıl Veri].[2015 Şubat]' />
+              <field name='[Asıl Veri].[2016 Aralık]' />
+              <field name='[Asıl Veri].[2016 Ağustos]' />
+              <field name='[Asıl Veri].[2016 Ekim]' />
+              <field name='[Asıl Veri].[2016 Eylül]' />
+              <field name='[Asıl Veri].[2016 Haziran]' />
+              <field name='[Asıl Veri].[2016 Kasım]' />
+              <field name='[Asıl Veri].[2016 Mart]' />
+              <field name='[Asıl Veri].[2016 Mayıs]' />
+              <field name='[Asıl Veri].[2016 Nisan]' />
+              <field name='[Asıl Veri].[2016 Ocak]' />
+              <field name='[Asıl Veri].[2016 Temmuz]' />
+              <field name='[Asıl Veri].[2016 Şubat]' />
+              <field name='[Asıl Veri].[2017 Aralık]' />
+              <field name='[Asıl Veri].[2017 Ağustos]' />
+              <field name='[Asıl Veri].[2017 Ekim]' />
+              <field name='[Asıl Veri].[2017 Eylül]' />
+              <field name='[Asıl Veri].[2017 Haziran]' />
+              <field name='[Asıl Veri].[2017 Kasım]' />
+              <field name='[Asıl Veri].[2017 Mart]' />
+              <field name='[Asıl Veri].[2017 Mayıs]' />
+              <field name='[Asıl Veri].[2017 Nisan]' />
+              <field name='[Asıl Veri].[2017 Ocak]' />
+              <field name='[Asıl Veri].[2017 Temmuz]' />
+              <field name='[Asıl Veri].[2017 Şubat]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.05dingn06s5dpx1gqn86w1a9221e' name='Asıl Veri' table='[&apos;Asıl Veri$&apos;]' type='table'>
+            <columns gridOrigin='A1:BL85:no:A1:BL85:2' header='no' lost='0' outcome='1' processed='5021'>
+              <column datatype='string' name='F1' ordinal='0' />
+              <column datatype='integer' name='2013 Ocak' ordinal='1' />
+              <column datatype='integer' name='2013 Şubat' ordinal='2' />
+              <column datatype='integer' name='2013 Mart' ordinal='3' />
+              <column datatype='integer' name='2013 Nisan' ordinal='4' />
+              <column datatype='integer' name='2013 Mayıs' ordinal='5' />
+              <column datatype='integer' name='2013 Haziran' ordinal='6' />
+              <column datatype='integer' name='2013 Temmuz' ordinal='7' />
+              <column datatype='integer' name='2013 Ağustos' ordinal='8' />
+              <column datatype='integer' name='2013 Eylül' ordinal='9' />
+              <column datatype='integer' name='2013 Ekim' ordinal='10' />
+              <column datatype='integer' name='2013 Kasım' ordinal='11' />
+              <column datatype='integer' name='2013 Aralık' ordinal='12' />
+              <column datatype='real' name='F14' ordinal='13' />
+              <column datatype='integer' name='2014 Ocak' ordinal='14' />
+              <column datatype='integer' name='2014 Şubat' ordinal='15' />
+              <column datatype='integer' name='2014 Mart' ordinal='16' />
+              <column datatype='integer' name='2014 Nisan' ordinal='17' />
+              <column datatype='integer' name='2014 Mayıs' ordinal='18' />
+              <column datatype='integer' name='2014 Haziran' ordinal='19' />
+              <column datatype='integer' name='2014 Temmuz' ordinal='20' />
+              <column datatype='integer' name='2014 Ağustos' ordinal='21' />
+              <column datatype='integer' name='2014 Eylül' ordinal='22' />
+              <column datatype='integer' name='2014 Ekim' ordinal='23' />
+              <column datatype='integer' name='2014 Kasım' ordinal='24' />
+              <column datatype='integer' name='2014 Aralık' ordinal='25' />
+              <column datatype='integer' name='2015 Ocak' ordinal='26' />
+              <column datatype='integer' name='2015 Şubat' ordinal='27' />
+              <column datatype='integer' name='2015 Mart' ordinal='28' />
+              <column datatype='integer' name='2015 Nisan' ordinal='29' />
+              <column datatype='integer' name='2015 Mayıs' ordinal='30' />
+              <column datatype='integer' name='2015 Haziran' ordinal='31' />
+              <column datatype='integer' name='2015 Temmuz' ordinal='32' />
+              <column datatype='integer' name='2015 Ağustos' ordinal='33' />
+              <column datatype='integer' name='2015 Eylül' ordinal='34' />
+              <column datatype='integer' name='2015 Ekim' ordinal='35' />
+              <column datatype='integer' name='2015 Kasım' ordinal='36' />
+              <column datatype='integer' name='2015 Aralık' ordinal='37' />
+              <column datatype='integer' name='2016 Ocak' ordinal='38' />
+              <column datatype='integer' name='2016 Şubat' ordinal='39' />
+              <column datatype='integer' name='2016 Mart' ordinal='40' />
+              <column datatype='integer' name='2016 Nisan' ordinal='41' />
+              <column datatype='integer' name='2016 Mayıs' ordinal='42' />
+              <column datatype='integer' name='2016 Haziran' ordinal='43' />
+              <column datatype='integer' name='2016 Temmuz' ordinal='44' />
+              <column datatype='integer' name='2016 Ağustos' ordinal='45' />
+              <column datatype='integer' name='2016 Eylül' ordinal='46' />
+              <column datatype='integer' name='2016 Ekim' ordinal='47' />
+              <column datatype='integer' name='2016 Kasım' ordinal='48' />
+              <column datatype='integer' name='2016 Aralık' ordinal='49' />
+              <column datatype='integer' name='2017 Ocak' ordinal='50' />
+              <column datatype='integer' name='2017 Şubat' ordinal='51' />
+              <column datatype='integer' name='2017 Mart' ordinal='52' />
+              <column datatype='integer' name='2017 Nisan' ordinal='53' />
+              <column datatype='integer' name='2017 Mayıs' ordinal='54' />
+              <column datatype='integer' name='2017 Haziran' ordinal='55' />
+              <column datatype='integer' name='2017 Temmuz' ordinal='56' />
+              <column datatype='integer' name='2017 Ağustos' ordinal='57' />
+              <column datatype='integer' name='2017 Eylül' ordinal='58' />
+              <column datatype='integer' name='2017 Ekim' ordinal='59' />
+              <column datatype='integer' name='2017 Kasım' ordinal='60' />
+              <column datatype='integer' name='2017 Aralık' ordinal='61' />
+              <column datatype='integer' name='2018 Ocak' ordinal='62' />
+              <column datatype='integer' name='Şubat' ordinal='63' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Asıl Veri]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:BL85:no:A1:BL85:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>5021</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Asıl Veri]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[Asıl Veri]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>1</ordinal>
+            <hidden>true</hidden>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2018 Ocak</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2018 Ocak]</local-name>
+            <parent-name>[Asıl Veri]</parent-name>
+            <remote-alias>2018 Ocak</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Şubat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Şubat]</local-name>
+            <parent-name>[Asıl Veri]</parent-name>
+            <remote-alias>Şubat</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' hidden='true' name='[2018 Ocak]' role='measure' type='quantitative' />
+      <column caption='Ay Sayı' datatype='integer' hidden='true' name='[Calculation_394909397439827968]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Pivot Field Names - Split 2]&#13;&#10;WHEN  &quot;Ocak&quot; THEN 1&#13;&#10;WHEN  &quot;Şubat&quot; THEN 2&#13;&#10;WHEN  &quot;Mart&quot; THEN 3&#13;&#10;WHEN  &quot;Nisan&quot; THEN 4&#13;&#10;WHEN  &quot;Mayıs&quot; THEN 5&#13;&#10;WHEN  &quot;Haziran&quot; THEN 6&#13;&#10;WHEN  &quot;Temmuz&quot; THEN 7&#13;&#10;WHEN  &quot;Ağustos&quot; THEN 8&#13;&#10;WHEN  &quot;Eylül&quot; THEN 9&#13;&#10;WHEN  &quot;Ekim&quot; THEN 10&#13;&#10;WHEN  &quot;Kasım&quot; THEN 11&#13;&#10;WHEN  &quot;Aralık&quot; THEN 12&#13;&#10;END' />
+      </column>
+      <column caption='Tarih' datatype='date' name='[Calculation_394909397440917505]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKEDATE([Pivot Field Names - Split 1],[Calculation_394909397439827968],1)' />
+      </column>
+      <column datatype='real' hidden='true' name='[F14]' role='measure' type='quantitative' />
+      <column caption='İl' datatype='string' name='[F1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' caption='Yıl' datatype='integer' hidden='true' name='[Pivot Field Names - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1llsq070s6c0de19zewyy1i0ixk7].[Pivot Field Names]'>
+        <calculation class='tableau' formula='INT( SPLIT( [Pivot Field Names], &quot; &quot;, 1 ) )' />
+      </column>
+      <column caption='Ay' datatype='string' hidden='true' name='[Pivot Field Names - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1llsq070s6c0de19zewyy1i0ixk7].[Pivot Field Names]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot; &quot;, 2 ) )' />
+      </column>
+      <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Konut Sayısı' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Asıl Veri' datatype='table' name='[__tableau_internal_object_id__].[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[Şubat]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/suley/Documents/My Tableau Repository/Datasources/Proje2_Asıl Veri (İllere+Göre+Satılan+Konut+Sayısı).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/16/2023 12:47:39 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Asıl Veri (İllere+Göre+Satılan+Konut+Sayısı)' increment-value='%null%' refresh-type='create' rows-inserted='4860' timestamp-start='2023-03-16 12:47:38.942' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Asıl Veri</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LTR_RTR' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Names</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Pivot Field Names]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Names</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pivot</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pivot Field Values</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Pivot Field Values]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pivot Field Values</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pivot</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1490</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Pivot Field Values' />
+        <field-sort-custom-order field='Pivot Field Names - Split 1' />
+        <field-sort-custom-order field='Pivot Field Names - Split 2' />
+        <field-sort-custom-order field='Calculation_394909397439827968' />
+        <field-sort-custom-order field='Calculation_394909397440917505' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Asıl Veri' id='Asıl Veri_560A2B6D22884DBEBAC01DBE2DAAA01B'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2013 Aralık]' />
+                  <value name='[2013 Ağustos]' />
+                  <value name='[2013 Ekim]' />
+                  <value name='[2013 Eylül]' />
+                  <value name='[2013 Haziran]' />
+                  <value name='[2013 Kasım]' />
+                  <value name='[2013 Mart]' />
+                  <value name='[2013 Mayıs]' />
+                  <value name='[2013 Nisan]' />
+                  <value name='[2013 Ocak]' />
+                  <value name='[2013 Temmuz]' />
+                  <value name='[2013 Şubat]' />
+                  <value name='[2014 Aralık]' />
+                  <value name='[2014 Ağustos]' />
+                  <value name='[2014 Ekim]' />
+                  <value name='[2014 Eylül]' />
+                  <value name='[2014 Haziran]' />
+                  <value name='[2014 Kasım]' />
+                  <value name='[2014 Mart]' />
+                  <value name='[2014 Mayıs]' />
+                  <value name='[2014 Nisan]' />
+                  <value name='[2014 Ocak]' />
+                  <value name='[2014 Temmuz]' />
+                  <value name='[2014 Şubat]' />
+                  <value name='[2015 Aralık]' />
+                  <value name='[2015 Ağustos]' />
+                  <value name='[2015 Ekim]' />
+                  <value name='[2015 Eylül]' />
+                  <value name='[2015 Haziran]' />
+                  <value name='[2015 Kasım]' />
+                  <value name='[2015 Mart]' />
+                  <value name='[2015 Mayıs]' />
+                  <value name='[2015 Nisan]' />
+                  <value name='[2015 Ocak]' />
+                  <value name='[2015 Temmuz]' />
+                  <value name='[2015 Şubat]' />
+                  <value name='[2016 Aralık]' />
+                  <value name='[2016 Ağustos]' />
+                  <value name='[2016 Ekim]' />
+                  <value name='[2016 Eylül]' />
+                  <value name='[2016 Haziran]' />
+                  <value name='[2016 Kasım]' />
+                  <value name='[2016 Mart]' />
+                  <value name='[2016 Mayıs]' />
+                  <value name='[2016 Nisan]' />
+                  <value name='[2016 Ocak]' />
+                  <value name='[2016 Temmuz]' />
+                  <value name='[2016 Şubat]' />
+                  <value name='[2017 Aralık]' />
+                  <value name='[2017 Ağustos]' />
+                  <value name='[2017 Ekim]' />
+                  <value name='[2017 Eylül]' />
+                  <value name='[2017 Haziran]' />
+                  <value name='[2017 Kasım]' />
+                  <value name='[2017 Mart]' />
+                  <value name='[2017 Mayıs]' />
+                  <value name='[2017 Nisan]' />
+                  <value name='[2017 Ocak]' />
+                  <value name='[2017 Temmuz]' />
+                  <value name='[2017 Şubat]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[Asıl Veri].[2013 Aralık]' />
+                    <field name='[Asıl Veri].[2013 Ağustos]' />
+                    <field name='[Asıl Veri].[2013 Ekim]' />
+                    <field name='[Asıl Veri].[2013 Eylül]' />
+                    <field name='[Asıl Veri].[2013 Haziran]' />
+                    <field name='[Asıl Veri].[2013 Kasım]' />
+                    <field name='[Asıl Veri].[2013 Mart]' />
+                    <field name='[Asıl Veri].[2013 Mayıs]' />
+                    <field name='[Asıl Veri].[2013 Nisan]' />
+                    <field name='[Asıl Veri].[2013 Ocak]' />
+                    <field name='[Asıl Veri].[2013 Temmuz]' />
+                    <field name='[Asıl Veri].[2013 Şubat]' />
+                    <field name='[Asıl Veri].[2014 Aralık]' />
+                    <field name='[Asıl Veri].[2014 Ağustos]' />
+                    <field name='[Asıl Veri].[2014 Ekim]' />
+                    <field name='[Asıl Veri].[2014 Eylül]' />
+                    <field name='[Asıl Veri].[2014 Haziran]' />
+                    <field name='[Asıl Veri].[2014 Kasım]' />
+                    <field name='[Asıl Veri].[2014 Mart]' />
+                    <field name='[Asıl Veri].[2014 Mayıs]' />
+                    <field name='[Asıl Veri].[2014 Nisan]' />
+                    <field name='[Asıl Veri].[2014 Ocak]' />
+                    <field name='[Asıl Veri].[2014 Temmuz]' />
+                    <field name='[Asıl Veri].[2014 Şubat]' />
+                    <field name='[Asıl Veri].[2015 Aralık]' />
+                    <field name='[Asıl Veri].[2015 Ağustos]' />
+                    <field name='[Asıl Veri].[2015 Ekim]' />
+                    <field name='[Asıl Veri].[2015 Eylül]' />
+                    <field name='[Asıl Veri].[2015 Haziran]' />
+                    <field name='[Asıl Veri].[2015 Kasım]' />
+                    <field name='[Asıl Veri].[2015 Mart]' />
+                    <field name='[Asıl Veri].[2015 Mayıs]' />
+                    <field name='[Asıl Veri].[2015 Nisan]' />
+                    <field name='[Asıl Veri].[2015 Ocak]' />
+                    <field name='[Asıl Veri].[2015 Temmuz]' />
+                    <field name='[Asıl Veri].[2015 Şubat]' />
+                    <field name='[Asıl Veri].[2016 Aralık]' />
+                    <field name='[Asıl Veri].[2016 Ağustos]' />
+                    <field name='[Asıl Veri].[2016 Ekim]' />
+                    <field name='[Asıl Veri].[2016 Eylül]' />
+                    <field name='[Asıl Veri].[2016 Haziran]' />
+                    <field name='[Asıl Veri].[2016 Kasım]' />
+                    <field name='[Asıl Veri].[2016 Mart]' />
+                    <field name='[Asıl Veri].[2016 Mayıs]' />
+                    <field name='[Asıl Veri].[2016 Nisan]' />
+                    <field name='[Asıl Veri].[2016 Ocak]' />
+                    <field name='[Asıl Veri].[2016 Temmuz]' />
+                    <field name='[Asıl Veri].[2016 Şubat]' />
+                    <field name='[Asıl Veri].[2017 Aralık]' />
+                    <field name='[Asıl Veri].[2017 Ağustos]' />
+                    <field name='[Asıl Veri].[2017 Ekim]' />
+                    <field name='[Asıl Veri].[2017 Eylül]' />
+                    <field name='[Asıl Veri].[2017 Haziran]' />
+                    <field name='[Asıl Veri].[2017 Kasım]' />
+                    <field name='[Asıl Veri].[2017 Mart]' />
+                    <field name='[Asıl Veri].[2017 Mayıs]' />
+                    <field name='[Asıl Veri].[2017 Nisan]' />
+                    <field name='[Asıl Veri].[2017 Ocak]' />
+                    <field name='[Asıl Veri].[2017 Temmuz]' />
+                    <field name='[Asıl Veri].[2017 Şubat]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.05dingn06s5dpx1gqn86w1a9221e' name='Asıl Veri' table='[&apos;Asıl Veri$&apos;]' type='table'>
+                  <columns gridOrigin='A1:BL85:no:A1:BL85:2' header='no' lost='0' outcome='1' processed='5021'>
+                    <column datatype='string' name='F1' ordinal='0' />
+                    <column datatype='integer' name='2013 Ocak' ordinal='1' />
+                    <column datatype='integer' name='2013 Şubat' ordinal='2' />
+                    <column datatype='integer' name='2013 Mart' ordinal='3' />
+                    <column datatype='integer' name='2013 Nisan' ordinal='4' />
+                    <column datatype='integer' name='2013 Mayıs' ordinal='5' />
+                    <column datatype='integer' name='2013 Haziran' ordinal='6' />
+                    <column datatype='integer' name='2013 Temmuz' ordinal='7' />
+                    <column datatype='integer' name='2013 Ağustos' ordinal='8' />
+                    <column datatype='integer' name='2013 Eylül' ordinal='9' />
+                    <column datatype='integer' name='2013 Ekim' ordinal='10' />
+                    <column datatype='integer' name='2013 Kasım' ordinal='11' />
+                    <column datatype='integer' name='2013 Aralık' ordinal='12' />
+                    <column datatype='real' name='F14' ordinal='13' />
+                    <column datatype='integer' name='2014 Ocak' ordinal='14' />
+                    <column datatype='integer' name='2014 Şubat' ordinal='15' />
+                    <column datatype='integer' name='2014 Mart' ordinal='16' />
+                    <column datatype='integer' name='2014 Nisan' ordinal='17' />
+                    <column datatype='integer' name='2014 Mayıs' ordinal='18' />
+                    <column datatype='integer' name='2014 Haziran' ordinal='19' />
+                    <column datatype='integer' name='2014 Temmuz' ordinal='20' />
+                    <column datatype='integer' name='2014 Ağustos' ordinal='21' />
+                    <column datatype='integer' name='2014 Eylül' ordinal='22' />
+                    <column datatype='integer' name='2014 Ekim' ordinal='23' />
+                    <column datatype='integer' name='2014 Kasım' ordinal='24' />
+                    <column datatype='integer' name='2014 Aralık' ordinal='25' />
+                    <column datatype='integer' name='2015 Ocak' ordinal='26' />
+                    <column datatype='integer' name='2015 Şubat' ordinal='27' />
+                    <column datatype='integer' name='2015 Mart' ordinal='28' />
+                    <column datatype='integer' name='2015 Nisan' ordinal='29' />
+                    <column datatype='integer' name='2015 Mayıs' ordinal='30' />
+                    <column datatype='integer' name='2015 Haziran' ordinal='31' />
+                    <column datatype='integer' name='2015 Temmuz' ordinal='32' />
+                    <column datatype='integer' name='2015 Ağustos' ordinal='33' />
+                    <column datatype='integer' name='2015 Eylül' ordinal='34' />
+                    <column datatype='integer' name='2015 Ekim' ordinal='35' />
+                    <column datatype='integer' name='2015 Kasım' ordinal='36' />
+                    <column datatype='integer' name='2015 Aralık' ordinal='37' />
+                    <column datatype='integer' name='2016 Ocak' ordinal='38' />
+                    <column datatype='integer' name='2016 Şubat' ordinal='39' />
+                    <column datatype='integer' name='2016 Mart' ordinal='40' />
+                    <column datatype='integer' name='2016 Nisan' ordinal='41' />
+                    <column datatype='integer' name='2016 Mayıs' ordinal='42' />
+                    <column datatype='integer' name='2016 Haziran' ordinal='43' />
+                    <column datatype='integer' name='2016 Temmuz' ordinal='44' />
+                    <column datatype='integer' name='2016 Ağustos' ordinal='45' />
+                    <column datatype='integer' name='2016 Eylül' ordinal='46' />
+                    <column datatype='integer' name='2016 Ekim' ordinal='47' />
+                    <column datatype='integer' name='2016 Kasım' ordinal='48' />
+                    <column datatype='integer' name='2016 Aralık' ordinal='49' />
+                    <column datatype='integer' name='2017 Ocak' ordinal='50' />
+                    <column datatype='integer' name='2017 Şubat' ordinal='51' />
+                    <column datatype='integer' name='2017 Mart' ordinal='52' />
+                    <column datatype='integer' name='2017 Nisan' ordinal='53' />
+                    <column datatype='integer' name='2017 Mayıs' ordinal='54' />
+                    <column datatype='integer' name='2017 Haziran' ordinal='55' />
+                    <column datatype='integer' name='2017 Temmuz' ordinal='56' />
+                    <column datatype='integer' name='2017 Ağustos' ordinal='57' />
+                    <column datatype='integer' name='2017 Eylül' ordinal='58' />
+                    <column datatype='integer' name='2017 Ekim' ordinal='59' />
+                    <column datatype='integer' name='2017 Kasım' ordinal='60' />
+                    <column datatype='integer' name='2017 Aralık' ordinal='61' />
+                    <column datatype='integer' name='2018 Ocak' ordinal='62' />
+                    <column datatype='integer' name='Şubat' ordinal='63' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Asıl Veri (İllere+Göre+Satılan+Konut+Sayısı)' name='federated.1llsq070s6c0de19zewyy1i0ixk7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1llsq070s6c0de19zewyy1i0ixk7'>
+            <column caption='Ay Sayı' datatype='integer' hidden='true' name='[Calculation_394909397439827968]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Pivot Field Names - Split 2]&#13;&#10;WHEN  &quot;Ocak&quot; THEN 1&#13;&#10;WHEN  &quot;Şubat&quot; THEN 2&#13;&#10;WHEN  &quot;Mart&quot; THEN 3&#13;&#10;WHEN  &quot;Nisan&quot; THEN 4&#13;&#10;WHEN  &quot;Mayıs&quot; THEN 5&#13;&#10;WHEN  &quot;Haziran&quot; THEN 6&#13;&#10;WHEN  &quot;Temmuz&quot; THEN 7&#13;&#10;WHEN  &quot;Ağustos&quot; THEN 8&#13;&#10;WHEN  &quot;Eylül&quot; THEN 9&#13;&#10;WHEN  &quot;Ekim&quot; THEN 10&#13;&#10;WHEN  &quot;Kasım&quot; THEN 11&#13;&#10;WHEN  &quot;Aralık&quot; THEN 12&#13;&#10;END' />
+            </column>
+            <column caption='Tarih' datatype='date' name='[Calculation_394909397440917505]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKEDATE([Pivot Field Names - Split 1],[Calculation_394909397439827968],1)' />
+            </column>
+            <column caption='İl' datatype='string' name='[F1]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column aggregation='Sum' caption='Yıl' datatype='integer' hidden='true' name='[Pivot Field Names - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1llsq070s6c0de19zewyy1i0ixk7].[Pivot Field Names]'>
+              <calculation class='tableau' formula='INT( SPLIT( [Pivot Field Names], &quot; &quot;, 1 ) )' />
+            </column>
+            <column caption='Ay' datatype='string' hidden='true' name='[Pivot Field Names - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1llsq070s6c0de19zewyy1i0ixk7].[Pivot Field Names]'>
+              <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Names], &quot; &quot;, 2 ) )' />
+            </column>
+            <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Konut Sayısı' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pivot Field Values]' derivation='Sum' name='[sum:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_394909397440917505]' derivation='Year' name='[yr:Calculation_394909397440917505:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1llsq070s6c0de19zewyy1i0ixk7].[sum:Pivot Field Values:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1llsq070s6c0de19zewyy1i0ixk7].[none:F1:nk]</rows>
+        <cols>[federated.1llsq070s6c0de19zewyy1i0ixk7].[yr:Calculation_394909397440917505:ok]</cols>
+      </table>
+      <simple-id uuid='{4FC1E57D-C0BE-43DB-B9B9-EE304EC29148}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1llsq070s6c0de19zewyy1i0ixk7].[none:F1:nk]</field>
+            <field>[federated.1llsq070s6c0de19zewyy1i0ixk7].[yr:Calculation_394909397440917505:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{94A2AA80-ED9F-4597-AD35-30DD9EE0F410}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      hLe6/OS9MgAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
