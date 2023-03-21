@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Stocks 2010 - 2013 (tds_sample_data_all)' inline='true' name='federated.04jisff0m6g0yx1cvmdf50909whn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tds_sample_data_all' name='excel-direct.021sffx0885t9q1g1zhip0s8b1hj'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/certification/tds_sample_data_all.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.021sffx0885t9q1g1zhip0s8b1hj' name='Stocks 2010 - 2013' table='[&apos;Stocks 2010 - 2013$&apos;]' type='table'>
+          <columns gridOrigin='A1:H3016:no:A1:H3016:0' header='yes' outcome='6'>
+            <column datatype='real' name='Close' ordinal='0' />
+            <column datatype='string' name='Company' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='real' name='High' ordinal='3' />
+            <column datatype='real' name='Low' ordinal='4' />
+            <column datatype='integer' name='Number of Records' ordinal='5' />
+            <column datatype='real' name='Open' ordinal='6' />
+            <column datatype='integer' name='Volume' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.021sffx0885t9q1g1zhip0s8b1hj' name='Stocks 2010 - 2013' table='[&apos;Stocks 2010 - 2013$&apos;]' type='table'>
+          <columns gridOrigin='A1:H3016:no:A1:H3016:0' header='yes' outcome='6'>
+            <column datatype='real' name='Close' ordinal='0' />
+            <column datatype='string' name='Company' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='real' name='High' ordinal='3' />
+            <column datatype='real' name='Low' ordinal='4' />
+            <column datatype='integer' name='Number of Records' ordinal='5' />
+            <column datatype='real' name='Open' ordinal='6' />
+            <column datatype='integer' name='Volume' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H3016:no:A1:H3016:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Company]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Company</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>High</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Low</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Open]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Open</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[Stocks 2010 - 2013]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Stocks 2010 - 2013' datatype='table' name='[__tableau_internal_object_id__].[Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Stocks 2010 - 2013' id='Stocks 2010 - 2013_454677EBBAD440E98BBA519B2FB89479'>
+            <properties context=''>
+              <relation connection='excel-direct.021sffx0885t9q1g1zhip0s8b1hj' name='Stocks 2010 - 2013' table='[&apos;Stocks 2010 - 2013$&apos;]' type='table'>
+                <columns gridOrigin='A1:H3016:no:A1:H3016:0' header='yes' outcome='6'>
+                  <column datatype='real' name='Close' ordinal='0' />
+                  <column datatype='string' name='Company' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='real' name='High' ordinal='3' />
+                  <column datatype='real' name='Low' ordinal='4' />
+                  <column datatype='integer' name='Number of Records' ordinal='5' />
+                  <column datatype='real' name='Open' ordinal='6' />
+                  <column datatype='integer' name='Volume' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='q5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Using the Stocks 2010-2013 table, create a chart to see the monthly change in volumes of stocks, beginning of 2010 to the end of 2013. </run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Which two consecutive months saw the least fluctuation in increase or decrease?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Stocks 2010 - 2013 (tds_sample_data_all)' name='federated.04jisff0m6g0yx1cvmdf50909whn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04jisff0m6g0yx1cvmdf50909whn'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Volume]' derivation='Sum' name='[sum:Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04jisff0m6g0yx1cvmdf50909whn].[sum:Volume:qk]</rows>
+        <cols>[federated.04jisff0m6g0yx1cvmdf50909whn].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{715A00D8-1C5A-46AE-9FD8-18A21F3B27A7}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='q5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04jisff0m6g0yx1cvmdf50909whn].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2BA9065B-924E-4D76-8275-1220AFECE5E6}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='q5' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
