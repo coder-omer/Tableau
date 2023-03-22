@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0213.1102                               -->
+<workbook original-version='18.1' source-build='2021.4.4 (20214.22.0213.1102)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Recipes+ (Cookie Production)' inline='true' name='federated.0mesuzq05u34xl12vqzlf1di2wtw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cookie Production' name='excel-direct.00azjmx1x5s0yu10qpi011cd2md6'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='D:/01_I.T/data_science/Tableau/ch10_eu_session_5_datasets/Join/Cookie Production.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Recipes].[Recipe ID]' />
+              <expression op='[Ingredients by Recipe].[Recipe ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Recipes' table='[Recipes$]' type='table'>
+            <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Recipe ID' ordinal='0' />
+              <column datatype='string' name='Recipe Name' ordinal='1' />
+              <column datatype='integer' name='Cookies/Batch' ordinal='2' />
+              <column datatype='integer' name='Time (minutes)' ordinal='3' />
+              <column datatype='real' name='Batch Sale Price' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Ingredients by Recipe' table='[&apos;Ingredients by Recipe$&apos;]' type='table'>
+            <columns gridOrigin='A1:E49:no:A1:E49:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Recipe ID' ordinal='0' />
+              <column datatype='string' name='Recipe Name' ordinal='1' />
+              <column datatype='string' name='Ingredient Name' ordinal='2' />
+              <column datatype='real' name='Quantity' ordinal='3' />
+              <column datatype='string' name='Units' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Recipes].[Recipe ID]' />
+              <expression op='[Ingredients by Recipe].[Recipe ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Recipes' table='[Recipes$]' type='table'>
+            <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Recipe ID' ordinal='0' />
+              <column datatype='string' name='Recipe Name' ordinal='1' />
+              <column datatype='integer' name='Cookies/Batch' ordinal='2' />
+              <column datatype='integer' name='Time (minutes)' ordinal='3' />
+              <column datatype='real' name='Batch Sale Price' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Ingredients by Recipe' table='[&apos;Ingredients by Recipe$&apos;]' type='table'>
+            <columns gridOrigin='A1:E49:no:A1:E49:0' header='yes' outcome='6'>
+              <column datatype='integer' name='Recipe ID' ordinal='0' />
+              <column datatype='string' name='Recipe Name' ordinal='1' />
+              <column datatype='string' name='Ingredient Name' ordinal='2' />
+              <column datatype='real' name='Quantity' ordinal='3' />
+              <column datatype='string' name='Units' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Batch Sale Price]' value='[Recipes].[Batch Sale Price]' />
+          <map key='[Cookies/Batch]' value='[Recipes].[Cookies/Batch]' />
+          <map key='[Ingredient Name]' value='[Ingredients by Recipe].[Ingredient Name]' />
+          <map key='[Quantity]' value='[Ingredients by Recipe].[Quantity]' />
+          <map key='[Recipe ID (Ingredients by Recipe)]' value='[Ingredients by Recipe].[Recipe ID]' />
+          <map key='[Recipe ID]' value='[Recipes].[Recipe ID]' />
+          <map key='[Recipe Name (Ingredients by Recipe)]' value='[Ingredients by Recipe].[Recipe Name]' />
+          <map key='[Recipe Name]' value='[Recipes].[Recipe Name]' />
+          <map key='[Time (minutes)]' value='[Recipes].[Time (minutes)]' />
+          <map key='[Units]' value='[Ingredients by Recipe].[Units]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E6:no:A1:E6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E49:no:A1:E49:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recipe ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recipe ID]</local-name>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias>Recipe ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recipe Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recipe Name]</local-name>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias>Recipe Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cookies/Batch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cookies/Batch]</local-name>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias>Cookies/Batch</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time (minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time (minutes)]</local-name>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias>Time (minutes)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch Sale Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Batch Sale Price]</local-name>
+            <parent-name>[Recipes]</parent-name>
+            <remote-alias>Batch Sale Price</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recipe ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recipe ID (Ingredients by Recipe)]</local-name>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias>Recipe ID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recipe Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Recipe Name (Ingredients by Recipe)]</local-name>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias>Recipe Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ingredient Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Ingredient Name]</local-name>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias>Ingredient Name</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Units</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Units]</local-name>
+            <parent-name>[Ingredients by Recipe]</parent-name>
+            <remote-alias>Units</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LTR_RTR_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Recipe ID (Ingredients by Recipe)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Recipe ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Recipes' datatype='table' name='[__tableau_internal_object_id__].[Recipes_7BEC2399C5B84521BA8C2248C7337AF8]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Turkey&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Recipes' id='Recipes_7BEC2399C5B84521BA8C2248C7337AF8'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Recipes].[Recipe ID]' />
+                    <expression op='[Ingredients by Recipe].[Recipe ID]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Recipes' table='[Recipes$]' type='table'>
+                  <columns gridOrigin='A1:E6:no:A1:E6:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='Recipe ID' ordinal='0' />
+                    <column datatype='string' name='Recipe Name' ordinal='1' />
+                    <column datatype='integer' name='Cookies/Batch' ordinal='2' />
+                    <column datatype='integer' name='Time (minutes)' ordinal='3' />
+                    <column datatype='real' name='Batch Sale Price' ordinal='4' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.00azjmx1x5s0yu10qpi011cd2md6' name='Ingredients by Recipe' table='[&apos;Ingredients by Recipe$&apos;]' type='table'>
+                  <columns gridOrigin='A1:E49:no:A1:E49:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='Recipe ID' ordinal='0' />
+                    <column datatype='string' name='Recipe Name' ordinal='1' />
+                    <column datatype='string' name='Ingredient Name' ordinal='2' />
+                    <column datatype='real' name='Quantity' ordinal='3' />
+                    <column datatype='string' name='Units' ordinal='4' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Recipes+ (Cookie Production)' name='federated.0mesuzq05u34xl12vqzlf1di2wtw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mesuzq05u34xl12vqzlf1di2wtw'>
+            <column datatype='real' name='[Batch Sale Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Cookies/Batch]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Recipe ID]' role='dimension' type='ordinal' />
+            <column-instance column='[Batch Sale Price]' derivation='Avg' name='[avg:Batch Sale Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Cookies/Batch]' derivation='Avg' name='[avg:Cookies/Batch:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recipe ID]' derivation='None' name='[none:Recipe ID:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mesuzq05u34xl12vqzlf1di2wtw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mesuzq05u34xl12vqzlf1di2wtw].[avg:Batch Sale Price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0mesuzq05u34xl12vqzlf1di2wtw].[avg:Cookies/Batch:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0mesuzq05u34xl12vqzlf1di2wtw].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0mesuzq05u34xl12vqzlf1di2wtw].[avg:Batch Sale Price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0mesuzq05u34xl12vqzlf1di2wtw].[avg:Cookies/Batch:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0mesuzq05u34xl12vqzlf1di2wtw].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0mesuzq05u34xl12vqzlf1di2wtw].[:Measure Names]' value='87' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0mesuzq05u34xl12vqzlf1di2wtw].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mesuzq05u34xl12vqzlf1di2wtw].[none:Recipe ID:ok]</rows>
+        <cols>[federated.0mesuzq05u34xl12vqzlf1di2wtw].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{748CD0D8-C978-451D-8786-931F06CB29E8}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0mesuzq05u34xl12vqzlf1di2wtw].[none:Recipe ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{11121310-4252-4331-83E4-8D08604C482C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='144' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
